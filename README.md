@@ -1,4 +1,4 @@
-# Eureka Server Microservice
+# Eureka Server Registry
 
 This project serves as a Eureka Server, facilitating service discovery and registration within a microservices architecture.
 
@@ -8,7 +8,7 @@ Eureka Server, a core component of Netflix's Eureka, enables microservices to dy
 
 ## Configuration
 
-The Eureka Server microservice is configured via the `application.yml` file. Key configurations include defining the server port as 8088.
+The Eureka Server registry is configured via the `application.yml` file. Key configurations include defining the server port as 8088.
 
 ## Code Structure
 
