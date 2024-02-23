@@ -1,0 +1,46 @@
+# Eureka Server Microservice
+
+This project serves as a Eureka Server, facilitating service discovery and registration within a microservices architecture.
+
+## Overview
+
+Eureka Server, a core component of Netflix's Eureka, enables microservices to dynamically locate and communicate with each other without hardcoded network locations. With Eureka, services can register themselves and discover others within the same ecosystem seamlessly.
+
+## Configuration
+
+The Eureka Server microservice is configured via the `application.yml` file. Key configurations include defining the server port as 8088.
+
+## Code Structure
+
+The main class, `EurekServerRegistryApplication`, acts as the entry point for the application, responsible for bootstrapping the Spring application context. Annotated with `@EnableEurekaServer` and `@SpringBootApplication`, it enables Eureka Server functionality and Spring Boot auto-configuration.
+
+Additionally, the project provides two endpoints:
+
+1. **GET /service-instances/{applicationName}**: Retrieves service instances registered under a specific application name.
+2. **GET /services**: Retrieves a list of all registered services.
+
+## Endpoints
+
+### Retrieve Service Instances by Application Name
+
+- **URL**: `/service-instances/{applicationName}`
+- **Method**: GET
+- **Description**: Retrieves service instances for a specific application.
+- **Parameters**: `applicationName`
+
+### Retrieve Registered Services
+
+- **URL**: `/services`
+- **Method**: GET
+- **Description**: Retrieves all registered services.
+
+## Eureka Server Start
+
+The Eureka Server starts on: [http://localhost:8088](http://localhost:8088)
+
+## Social Profile
+- [LinkedIn](https://www.linkedin.com/in/ashwanicse/)
+- [Leetcode](https://leetcode.com/ashwani__kumar/)
+- [Topmate](https://topmate.io/ashwanikumar)
+## Linkedin Newsletter
+- [Subscribe](https://www.linkedin.com/newsletters/7084124970443767808/)

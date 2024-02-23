@@ -16,7 +16,7 @@ import java.util.List;
  * Created on 23/02/24.
  */
 
-//@RestController
+@RestController
 @AllArgsConstructor
 public class ServiceInstanceRestController {
 
