@@ -1,10 +1,11 @@
 server:
-  port: 8088
-
+  port: ${PORT:8088}
 spring:
   application:
     name: eureka-server
 
+#By default, the Eureka server will register itself into discovery.
+#We need to disable it by including the below properties.
 eureka:
   client:
     register-with-eureka: false
